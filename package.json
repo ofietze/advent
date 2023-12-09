@@ -1,0 +1,16 @@
+{
+  "name": "advent23",
+  "version": "1.0.0",
+  "description": "Solving the advent of code",
+  "main": "index.js",
+  "repository": "git@github.com:ofietze/advent23.git",
+  "author": "ofietze <f.oliver@live.de>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -8,6 +8,9 @@ import fs from "fs";
 
 // Consider your entire calibration document. What is the sum of all of the calibration values?
 const getCalibrationValue = (line: string): number => {
+  if (line.length === 0) {
+    return 0;
+  }
   let first = "";
   let latestMatch = "";
   for (const char of line) {
@@ -19,7 +22,8 @@ const getCalibrationValue = (line: string): number => {
     }
   }
   let twoDigits = first.concat(latestMatch);
-  const result = twoDigits.length === 2 ? Number.parseInt(twoDigits) : 0;
+
+  const result = Number.parseInt(twoDigits);
   return result;
 };
 

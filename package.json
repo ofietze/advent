@@ -1,0 +1,16 @@
+{
+  "name": "advent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ofietze/advent.git",
+  "author": "Oliver Fietze <oliver.fietze@harver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

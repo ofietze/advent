@@ -12,7 +12,7 @@ fn main() {
     let mut lock_position = 50u8;
     let mut times_on_zero = 0u16;
     for line in content.lines() {
-        let turn = line[1..].parse::<u8>().expect("Not a valid u8");
+        let turn = (line[1..].parse::<u16>().expect("Not a valid u16") % 100) as u8;
         if line.contains('R') {
             lock_position = lock_position + turn;
             if lock_position >= 100 {
